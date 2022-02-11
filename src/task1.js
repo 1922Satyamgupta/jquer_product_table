@@ -27,7 +27,7 @@ $(function () {
       error("fill the name field!!");
     } 
     else if(isNaN(parseFloat($("#product_sku").val()))){
-      error("SKU should not be number!!");
+      error("SKU should be number!!");
     } 
     else if(!isNaN(parseFloat($("#product_name").val()))){
       error("Name should be string!!!");
