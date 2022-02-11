@@ -126,12 +126,12 @@ var products = [
     });
   }
   function filterProducts() {
-    let chkOs = selectOs.find(":selected").text();
-    let chkBrand = selectBrand.find(":selected").text();
+    let check_os = selectOs.find(":selected").text();
+    let check_brand = selectBrand.find(":selected").text();
     $("tr").each(function () {
       if (
-        (hasFilter("brand", chkBrand, $(this)) &&
-        hasFilter("os", chkOs, $(this))) ||
+        (hasFilter("brand", check_brand, $(this)) &&
+        hasFilter("os", check_os, $(this))) ||
         $(this).children("th").length>0
       ) {
         $(this).show();
